@@ -1,0 +1,52 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'my_downloader/style.css' %}">  
+</head>
+
+
+
+<body>
+
+<div class="ct">
+        <p>Title: {{title}}</p>
+        <p>By: {{author}}</p>
+        {% comment %} <br>
+        Resolutions: {{onlyres}} {% endcomment %}
+        <img class="thumbnail-image"  src="{{thumbnail}}" alt="Error loading thumnnail">
+</div>
+
+
+<div class="div-table">
+    <table border="1">
+        <th ead>
+            <tr class="table-heading">
+                <th scope="col">Attributes</th>
+                <th scope="col">Download</th>
+            </tr>
+        </thead>
+
+        {% for i in onlyres %}
+
+        <tbody>
+            <tr>
+                <td data-label="Attributes">{{i}}</td>
+                <td data-label="Download">
+                    <form action="{% url 'YT-downloader:success' i %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit" value="Download" class="download-btn">Download</button>
+                    </form>
+                </td>
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+    
+</body> 
+</html>

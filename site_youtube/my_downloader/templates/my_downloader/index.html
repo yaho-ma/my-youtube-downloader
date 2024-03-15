@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    
+    <h2>enter youtube link</h2> 
+
+    <form action="download/" method="get">
+       
+        {% csrf_token %}
+        <label for="link"></label>
+        <input type="text" id="link" size="50" name="url">
+
+         
+        <input type="submit" >
+        
+
+    </form>
+</body>
+</html>
