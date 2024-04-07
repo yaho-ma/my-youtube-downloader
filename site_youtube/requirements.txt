@@ -81,6 +81,7 @@ diff-match-patch @ file:///Users/ktietz/demo/mc3/conda-bld/diff-match-patch_1630
 dill @ file:///work/ci_py311/dill_1676827712960/work
 distlib==0.3.8
 distributed @ file:///croot/distributed_1686866039819/work
+dj-database-url==2.1.0
 Django==5.0.2
 docstring-to-markdown @ file:///work/ci_py311/docstring-to-markdown_1676851973684/work
 docutils @ file:///work/ci_py311/docutils_1676822773036/work
@@ -99,6 +100,7 @@ gensim @ file:///work/ci_py311/gensim_1677033391129/work
 glob2 @ file:///home/linux1/recipes/ci/glob2_1610991677669/work
 gmpy2 @ file:///work/ci_py311/gmpy2_1676839849213/work
 greenlet @ file:///work/ci_py311/greenlet_1676825247229/work
+gunicorn==21.2.0
 h5py @ file:///croot/h5py_1691589708553/work
 HeapDict @ file:///Users/ktietz/demo/mc3/conda-bld/heapdict_1630598515714/work
 holoviews @ file:///croot/holoviews_1693378042783/work
@@ -226,6 +228,7 @@ prometheus-client @ file:///work/ci_py311_2/prometheus_client_1679340520168/work
 prompt-toolkit @ file:///work/ci_py311/prompt-toolkit_1676824857154/work
 Protego @ file:///tmp/build/80754af9/protego_1598657180827/work
 psutil @ file:///work/ci_py311_2/psutil_1679337388738/work
+psycopg2==2.9.9
 ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
 pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
 py-cpuinfo @ file:///Users/ktietz/demo/mc3/conda-bld/py-cpuinfo_1629480366017/work
